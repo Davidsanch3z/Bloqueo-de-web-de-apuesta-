@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">Promesa</string>
+
+    <!-- Pantalla de bloqueo -->
+    <string name="block_title_promise">Se lo prometiste a tu mamá</string>
+    <string name="block_subtitle_decision">Esta página fue bloqueada por tu propia decisión.</string>
+    <string name="block_button_close">Cerrar</string>
+    <string name="block_button_crisis">Modo Crisis · Pedir apoyo por WhatsApp</string>
+    <string name="block_domain_intercepted_label">Bloqueado: %1$s</string>
+    <string name="block_icon_cd">Candado de bloqueo activo</string>
+    <string name="crisis_chooser_title">Enviar mensaje de apoyo</string>
+    <string name="whatsapp_not_found_error">No se encontró WhatsApp instalado en el dispositivo.</string>
+
+    <!-- Guardia de desinstalación -->
+    <string name="uninstall_guard_title">Protección activa</string>
+    <string name="uninstall_guard_subtitle">Ingresa tu PIN para autorizar cambios o desinstalación de Promesa.</string>
+    <string name="uninstall_guard_unlocked">Autorizado por 60 segundos.</string>
+
+    <!-- Navegación -->
+    <string name="nav_dashboard">Inicio</string>
+    <string name="nav_settings">Ajustes</string>
+
+    <!-- Tablero principal -->
+    <string name="dashboard_title">Promesa</string>
+    <string name="dashboard_subtitle">Filtro web personal en segundo plano</string>
+    <string name="status_active_title">Protección activa</string>
+    <string name="status_active_desc">VPN local, guardia de búsqueda y prioridad máxima activas.</string>
+    <string name="status_paused_title">Pausa temporal</string>
+    <string name="status_paused_desc">Se reactivará automáticamente al terminar el contador.</string>
+    <string name="status_inactive_title">Protección inactiva</string>
+    <string name="status_inactive_desc">Activa la VPN local para bloquear casas de apuestas.</string>
+    <string name="action_enable_vpn">Activar protección</string>
+    <string name="action_pause_with_pin">Pausar 15 min (PIN)</string>
+    <string name="action_resume_now">Reactivar ahora</string>
+    <string name="action_setup_pin_first">Configurar PIN para iniciar</string>
+    <string name="stat_streak_days">Días sin intentos</string>
+    <string name="stat_blocked_total">Intentos bloqueados</string>
+    <string name="stat_domains_count">Dominios vigilados</string>
+    <string name="permissions_section_title">Permisos y protección del sistema</string>
+    <string name="perm_pin_title">PIN de seguridad</string>
+    <string name="perm_pin_ready">Configurado (bloqueo 30 min tras 3 fallos)</string>
+    <string name="perm_pin_missing">Requerido antes de pausar o detener</string>
+    <string name="perm_vpn_title">Servicio VPN local</string>
+    <string name="perm_vpn_ready">Permiso concedido</string>
+    <string name="perm_vpn_missing">Necesario para interceptar DNS</string>
+    <string name="perm_overlay_title">Mostrar sobre otras apps</string>
+    <string name="perm_overlay_ready">Pantalla de bloqueo inmediata</string>
+    <string name="perm_overlay_missing">Recomendado en Android 10+</string>
+    <string name="perm_notifications_title">Notificaciones prioritarias</string>
+    <string name="perm_notifications_ready">Servicio con prioridad máxima activo</string>
+    <string name="perm_notifications_missing">Necesario para alertas y segundo plano</string>
+    <string name="perm_accessibility_title">Guardia de desinstalación y Google</string>
+    <string name="perm_accessibility_ready">Protege desinstalación y búsquedas</string>
+    <string name="perm_accessibility_missing">Activa Accesibilidad para bloqueo total</string>
+    <string name="perm_battery_title">Exención de batería</string>
+    <string name="perm_battery_ready">Sin restricciones de Android</string>
+    <string name="perm_battery_missing">Evita que Android cierre la VPN</string>
+    <string name="perm_grant_action">Configurar</string>
+    <string name="recent_blocks_title">Log local de intentos</string>
+    <string name="recent_blocks_empty">Ningún intento registrado. Tu promesa se mantiene firme.</string>
+
+    <!-- Configuración y PIN -->
+    <string name="settings_title">Ajustes y Seguridad</string>
+    <string name="settings_pin_section">Control por PIN</string>
+    <string name="settings_pin_desc">El PIN evita desactivar la protección por impulso. Si se ingresa mal 3 veces seguidas, se bloquea por 30 minutos.</string>
+    <string name="settings_create_pin">Crear PIN de seguridad</string>
+    <string name="settings_change_pin">Cambiar PIN actual</string>
+    <string name="settings_pause_15_min">Desactivar temporalmente (15 min)</string>
+    <string name="settings_stop_vpn_pin">Detener servicio VPN (PIN)</string>
+    <string name="settings_clear_history_pin">Limpiar log local (PIN)</string>
+
+    <!-- Contacto de confianza WhatsApp -->
+    <string name="settings_trusted_section">Familiar o contacto de apoyo (WhatsApp)</string>
+    <string name="settings_trusted_desc">Se usará en el botón Modo Crisis y para generar una notificación silenciosa directa si ocurren 3 o más intentos en menos de 1 hora.</string>
+    <string name="settings_trusted_name_label">Nombre del contacto</string>
+    <string name="settings_trusted_phone_label">Número WhatsApp (ej. +573001234567)</string>
+    <string name="settings_trusted_save">Guardar contacto de apoyo</string>
+    <string name="settings_trusted_saved">Contacto de apoyo guardado.</string>
+
+    <!-- Arranque y DNS -->
+    <string name="settings_autostart_section">Segundo plano y arranque</string>
+    <string name="settings_autostart_title">Inicio automático y almacenamiento interno</string>
+    <string name="settings_autostart_desc">Promesa se inicia al encender el dispositivo, usa startForeground con prioridad máxima y bloquea su traslado a memoria externa.</string>
+    <string name="settings_dns_title">DNS cifrado permanente</string>
+    <string name="settings_dns_desc">Todas las consultas DNS salen siempre cifradas mediante DNS-over-TLS hacia este servidor fijo, sin posibilidad de cambio:</string>
+    <string name="settings_dns_host">53cf8e.dns.nextdns.io</string>
+    <string name="dashboard_dns_chip">DNS fijo: 53cf8e.dns.nextdns.io</string>
+    <string name="settings_domains_section">Dominios bloqueados (*.dominio)</string>
+    <string name="settings_domains_subdomains">Incluye automáticamente cualquier subdominio</string>
+    <string name="settings_keywords_section">Palabras bloqueadas en Google</string>
+
+    <!-- Diálogo de PIN -->
+    <string name="pin_enter_title">Ingresa tu PIN</string>
+    <string name="pin_create_title">Crea tu PIN</string>
+    <string name="pin_confirm_title">Confirma tu PIN</string>
+    <string name="pin_current_title">PIN actual</string>
+    <string name="pin_new_title">Nuevo PIN</string>
+    <string name="pin_subtitle_min_4">Mínimo 4 dígitos numéricos</string>
+    <string name="pin_error_min_length">El PIN debe tener al menos 4 dígitos.</string>
+    <string name="pin_error_mismatch">Los PIN no coinciden. Intenta de nuevo.</string>
+    <string name="pin_error_incorrect">PIN incorrecto. Intentos restantes: %1$d</string>
+    <string name="pin_error_locked_out">Bloqueado 30 min por 3 fallos. Espera %1$s</string>
+    <string name="pin_button_cancel">Cancelar</string>
+    <string name="pin_button_confirm">Confirmar</string>
+    <string name="pin_backspace_cd">Borrar último dígito</string>
+
+    <!-- Notificaciones -->
+    <string name="notif_channel_vpn_name">Protección VPN prioritaria</string>
+    <string name="notif_channel_vpn_desc">Mantiene el filtro DNS local activo con prioridad máxima</string>
+    <string name="notif_channel_alert_name">Alertas de bloqueo</string>
+    <string name="notif_channel_alert_desc">Notificación prioritaria cuando se bloquea un dominio de apuestas</string>
+    <string name="notif_channel_trusted_name">Alertas silenciosas al contacto</string>
+    <string name="notif_channel_trusted_desc">Aviso silencioso cuando hay 3 o más intentos en menos de una hora</string>
+    <string name="notif_vpn_active_title">Promesa activa</string>
+    <string name="notif_vpn_active_text">Protegiendo tus decisiones con DNS 53cf8e.dns.nextdns.io.</string>
+    <string name="notif_vpn_paused_title">Promesa en pausa temporal</string>
+    <string name="notif_vpn_paused_text">Se reactivará en %1$s.</string>
+    <string name="notif_block_alert_title">Se lo prometiste a tu mamá</string>
+    <string name="notif_block_alert_text">Bloqueado: %1$s. Esta página fue bloqueada por tu propia decisión.</string>
+    <string name="notif_trusted_alert_title">Aviso para tu familiar de confianza</string>
+    <string name="notif_trusted_alert_text">%1$d intentos bloqueados en menos de 1 hora. Toca para enviar aviso por WhatsApp a %2$s.</string>
+
+    <!-- Accesibilidad & Widget -->
+    <string name="accessibility_service_label">Promesa · Guardia de Seguridad</string>
+    <string name="accessibility_service_desc">Protege la desinstalación de Promesa con tu PIN y bloquea búsquedas de apuestas en Google.</string>
+    <string name="widget_streak_title">Promesa · Días sin intentos</string>
+</resources>

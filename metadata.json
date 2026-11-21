@@ -1,0 +1,6 @@
+{
+  "name": "Promesa",
+  "description": "Filtro web personal con VPN local para bloquear dominios de apuestas deportivas en Colombia, pantalla de bloqueo a pantalla completa y pausa de 15 minutos protegida por PIN.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
